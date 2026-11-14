@@ -58,7 +58,7 @@ flowchart LR
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/oprisa-de/riskguard.git](https://github.com/oprisa-de/riskguard.git)
+git clone https://github.com/oprisa-de/riskguard.git
 cd riskguard
 
 # 2. Create and activate virtual environment
