@@ -1,5 +1,5 @@
-from synthetic_generator import SyntheticDataGenerator
-from risk_engine import RiskEngine
+from data.synthetic_generator import SyntheticDataGenerator
+from data.risk_engine import RiskEngine
 import pandas as pd
 import logging
 

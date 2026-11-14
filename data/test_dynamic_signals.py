@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime
-from risk_engine import RiskEngine
+from data.risk_engine import RiskEngine
 
 def test_dynamic_danger_signals():
     # Setup the engine

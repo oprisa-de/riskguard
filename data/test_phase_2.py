@@ -2,8 +2,8 @@ import pandas as pd
 import sys
 import os
 from typing import Dict
-from risk_engine import RiskEngine
-from ingestion import DataIngestor
+from data.risk_engine import RiskEngine
+from data.ingestion import DataIngestor
 
 def run_full_pipeline():
     # 1. Generate sample data
