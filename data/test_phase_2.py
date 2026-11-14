@@ -9,7 +9,7 @@ def run_full_pipeline():
     # 1. Generate sample data
     from data.mock_generator import MockDataGenerator
     print("--- Initializing Mock Data ---")
-    mock_path = "/riskguard/data/mock_sample.csv"
+    mock_path = "data/mock_sample.csv"
     generator = MockDataGenerator(mock_path)
     generator.generate_sample_csv()
     print(f"Created {mock_path}")
@@ -29,8 +29,8 @@ def run_full_pipeline():
     # 4. Print Results
     print(f"Total Revenue: €{report['total_revenue']:,.2f}")
     print(f"Concentrated Clients: {report['concentrated_clients']}")
-    print(f"Risk Count: {report['risk_count']}")
     print(f"Max Risk Score: {report['max_risk_score']}")
+    print(f"Overdue Accounts: {report['overdue_clients']}")
     print("\nDanger Signals Found:")
     if not report['danger_signals']:
         print("No immediate danger signals detected.")

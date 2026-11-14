@@ -28,7 +28,7 @@ RiskGuard is an AI-driven Business Intelligence platform designed to mitigate **
 ---
 
 ## 3. Technical Stack
-- **Language:** Python 3.11+
+- **Language:** Python 3.12+
 - **LLM Orchestration:** LangChain / LangGraph
 - **Models:** 
     - **Local (Gemma 4):** Data processing, Privacy-Safe Analytics, Risk Scoring, Synthetic Data Generation.

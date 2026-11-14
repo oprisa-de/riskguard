@@ -27,7 +27,6 @@ def run_phase_1_demo():
     print(f"Total Analyzed Revenue: €{report['total_revenue']:,.2f}")
     print(f"Concentrated Clients Found: {report['concentrated_clients']}")
     print(f"Overdue Accounts: {report['overdue_clients']}")
-    print(f"Total High-Risk Concentration Count: {report['risk_count']}")
     print("--------------------------------\n")
 
     # Show the full concentration table

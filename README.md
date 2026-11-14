@@ -1,9 +1,15 @@
 # RiskGuard: AI-Powered Portfolio Diversification Engine (RPDE)
 ## (Risiko-Management-System zur Portfolio-Diversifizierung)
 
+## Prerequisites | Voraussetzungen
+- **Python:** 3.12+
+- **Ollama:** Installed and running at http://localhost:11434
+- **Model:** Run `ollama pull gemma4:12b`
+
 ---
 
 ## 🚀 Project Overview | Projektübersicht
+
 
 **English:**
 RiskGuard is an intelligent multi-agent system designed to solve one of the most critical challenges for growing businesses: **Concentration Risk**. Many companies inadvertently become over-dependent on a small number of high-revenue clients. RiskGuard analyzes client interaction patterns, identifies "success DNA," and provides an automated roadmap to diversify revenue streams while identifying "Danger Signals" like payment delays or declining engagement.
@@ -40,7 +46,7 @@ The system operates as a collaborative swarm of specialized agents:
     *   **Gemma 4 (Local):** Used for high-volume data processing, risk scoring, and privacy-sensitive analysis.
     *   **Claude 3.5 Sonnet (Online):** Used for high-level strategic reasoning and roadmap synthesis.
 *   **Data Processing:** Pandas, NumPy, Scikit-learn.
-*   **Backend:** Python 3.11.
+*   **Backend:** Python 3.12+.
 
 ---
 
@@ -53,20 +59,33 @@ The system processes data in a three-stage pipeline:
 
 ---
 
+## Prerequisites | Voraussetzungen
+- **Python:** 3.12+
+- **Ollama:** Installed and running at http://localhost:11434
+- **Model:** Run `ollama pull gemma4:12b`
+
+---
+
 ## 🚀 Getting Started | Erste Schritte
+
 
 To run the RiskGuard prototype locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/riskguard.git
+git clone https://github.com/oprisa-de/riskguard.git
 cd riskguard
 
 # Install dependencies
 pip install -r requirements.txt
 
+# Configure the environment
+cp .env.example .env
+# Edit .env with your local Ollama and Anthropic API keys
+
 # Run the Phase 1 Analysis (Synthetic Data Demo)
 python3 data/test_phase_1.py
+
 ```
 
 ---
