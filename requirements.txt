@@ -1,0 +1,24 @@
+yes# Requirements
+# Core
+numpy
+pandas
+scikit-learn
+pydantic
+
+# AI & LLM
+langchain
+langchain-community
+langgraph
+openai
+anthropic
+
+# Data & Viz
+streamlit
+plotly
+matplotlib
+scipy
+
+# Utils
+python-dotenv
+click
+typing-extensions
