@@ -1,6 +1,8 @@
 # RiskGuard: AI-Powered Portfolio Diversification Engine (RPDE)
 ## Risiko-Management-System zur Portfolio-Diversifizierung
 
+[![RiskGuard CI](https://github.com/oprisa-de/riskguard/actions/workflows/ci.yml/badge.svg)](https://github.com/oprisa-de/riskguard/actions/workflows/ci.yml)
+
 ---
 
 ## Project Overview | Projektübersicht
