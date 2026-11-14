@@ -1,0 +1,169 @@
+{
+  "file_path": "data/mock_sample.csv",
+  "risk_threshold": 0.3,
+  "raw_records_count": 30,
+  "risk_report": {
+    "total_revenue": 19417500.0,
+    "concentrated_clients": [
+      "CLIENT_002",
+      "CLIENT_004"
+    ],
+    "overdue_clients": [
+      "CLIENT_003",
+      "CLIENT_004"
+    ],
+    "danger_signals": [
+      {
+        "customer_id": "CLIENT_003",
+        "signal_type": "Payment Overdue",
+        "severity": "Medium",
+        "description": "Customer CLIENT_003 shows recurring payment delays (3/6 overdue records, 50%)."
+      }
+    ],
+    "max_risk_score": 0.75,
+    "concentration_breakdown": [
+      {
+        "customer_id": "CLIENT_002",
+        "revenue_amount": 7500000.0,
+        "latest_status": "Paid",
+        "overdue_rate": 0.0,
+        "revenue_share": 0.3862,
+        "is_concentrated": true,
+        "risk_score": 0.7
+      },
+      {
+        "customer_id": "CLIENT_004",
+        "revenue_amount": 6300000.0,
+        "latest_status": "Paid",
+        "overdue_rate": 0.17,
+        "revenue_share": 0.3244,
+        "is_concentrated": true,
+        "risk_score": 0.75
+      },
+      {
+        "customer_id": "CLIENT_001",
+        "revenue_amount": 3062500.0,
+        "latest_status": "Paid",
+        "overdue_rate": 0.0,
+        "revenue_share": 0.1577,
+        "is_concentrated": false,
+        "risk_score": 0.37
+      },
+      {
+        "customer_id": "CLIENT_003",
+        "revenue_amount": 1950000.0,
+        "latest_status": "Paid",
+        "overdue_rate": 0.5,
+        "revenue_share": 0.1004,
+        "is_concentrated": false,
+        "risk_score": 0.38
+      },
+      {
+        "customer_id": "CLIENT_005",
+        "revenue_amount": 605000.0,
+        "latest_status": "Paid",
+        "overdue_rate": 0.0,
+        "revenue_share": 0.0312,
+        "is_concentrated": false,
+        "risk_score": 0.07
+      }
+    ]
+  },
+  "profiler_summary": {
+    "total_profiles_analyzed": 5,
+    "successful_profiles_count": 4,
+    "successful_profiles": [
+      {
+        "id": "CLIENT_001",
+        "total_revenue": 3062500.0,
+        "growth": 0.04,
+        "engagement": 0.79,
+        "reliability": 1.0,
+        "summary": "High-Value Anchor: Consistent engagement with strong revenue contribution."
+      },
+      {
+        "id": "CLIENT_002",
+        "total_revenue": 7500000.0,
+        "growth": 0.08,
+        "engagement": 0.73,
+        "reliability": 1.0,
+        "summary": "High-Value Anchor: Consistent engagement with strong revenue contribution."
+      },
+      {
+        "id": "CLIENT_004",
+        "total_revenue": 6300000.0,
+        "growth": 0.1,
+        "engagement": 0.85,
+        "reliability": 0.83,
+        "summary": "High-Value Anchor: Consistent engagement with strong revenue contribution."
+      },
+      {
+        "id": "CLIENT_005",
+        "total_revenue": 605000.0,
+        "growth": 0.02,
+        "engagement": 0.86,
+        "reliability": 1.0,
+        "summary": "Standard Growth: Emerging client with steady engagement."
+      }
+    ],
+    "risk_alerts": [
+      "CLIENT_003"
+    ]
+  },
+  "market_analysis": {
+    "market_segments": [
+      {
+        "segment": "Financial Services (Banking & Insurance)",
+        "score": 0.95,
+        "reasoning": "Strict regulatory environments and critical infrastructure requirements necessitate the high engagement and payment reliability seen in the 'High-Value Anchor' profile. These clients prioritize stability and long-term reliability over rapid, volatile growth."
+      },
+      {
+        "segment": "Healthcare Systems (Managed Care & HealthTech)",
+        "score": 0.92,
+        "reasoning": "The healthcare sector requires high-reliability partners for patient data and operational workflows. This aligns with the high engagement scores and steady revenue growth patterns observed in the provided data."
+      },
+      {
+        "segment": "Logistics & Supply Chain Management",
+        "score": 0.88,
+        "reasoning": "Large-scale logistics providers operate on high-volume, recurring contracts. Their need for consistent, reliable service delivery mirrors the 'High-Value Anchor' profile's demand for steady growth and high engagement."
+      },
+      {
+        "segment": "Manufacturing & Industrial Automation",
+        "score": 0.85,
+        "reasoning": "Enterprise manufacturing clients require deep integration into their production cycles. This creates a high-stickiness environment that supports the high-revenue, high-reliability profile of the current successful patterns."
+      }
+    ],
+    "top_segment": "Financial Services (Banking & Insurance)"
+  },
+  "diversification_roadmap": {
+    "executive_summary": "The current portfolio exhibits critical concentration risk, with two clients accounting for over 70% of total revenue and active payment delinquency signals. This strategy shifts the growth model from 'Whale' hunting to a 'High-Value Anchor' strategy, prioritizing the Financial Services and Healthcare sectors. By aggressively pursuing high-reliability, high-stickiness contracts in these regulated environments, we will dilute the influence of the top two clients and stabilize the revenue base.",
+    "target_concentration_ceiling": 0.2,
+    "priority_actions": [
+      {
+        "phase": "Risk Mitigation & Stabilization (Days 1-30)",
+        "action": "Credit Risk Audit and Financial Services Outreach",
+        "target_segment": "Financial Services (Banking & Insurance)",
+        "expected_impact": "Stabilize cash flow by addressing overdue payments while initiating high-trust sales cycles with institutional clients."
+      },
+      {
+        "phase": "Aggressive Diversification (Days 31-60)",
+        "action": "Healthcare Systems Acquisition Campaign",
+        "target_segment": "Healthcare Systems (Managed Care & HealthTech)",
+        "expected_impact": "Secure 3-5 new contracts to reduce the revenue share of the top two clients by at least 10%."
+      },
+      {
+        "phase": "Portfolio Rebalancing (Days 61-90)",
+        "action": "Logistics & Manufacturing Contract Expansion",
+        "target_segment": "Logistics & Supply Chain Management",
+        "expected_impact": "Establish recurring, high-volume revenue streams to ensure no single client exceeds the 25% threshold."
+      }
+    ],
+    "kpis_to_track": [
+      "Maximum Revenue Concentration Ratio (%)",
+      "New Logo Acquisition Rate (High-Value Segments)",
+      "Days Sales Outstanding (DSO)",
+      "Average Revenue Per Account (ARPA) Diversity Score"
+    ],
+    "engine_used": "ollama:gemma4:12b"
+  }
+}

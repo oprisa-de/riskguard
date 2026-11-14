@@ -1,24 +1,17 @@
-# Requirements
-# Core
-numpy
-pandas
-scikit-learn
-pydantic
+# Core Data Processing
+numpy>=1.26.0
+pandas>=2.2.0
+openpyxl>=3.1.0
 
-# AI & LLM
-langchain
-langchain-community
-langgraph
-openai
-anthropic
+# Validation & Configuration
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+requests>=2.31.0
 
-# Data & Viz
-streamlit
-plotly
-matplotlib
-scipy
+# Multi-Agent Orchestration & LLMs
+langgraph>=0.2.0
+langchain-core>=0.3.0
+anthropic>=0.34.0
 
-# Utils
-python-dotenv
-click
-typing-extensions
+# Testing
+pytest>=8.0.0
